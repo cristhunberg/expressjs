@@ -12,6 +12,10 @@ app.get("/", async (req, res) => {
   res.json({ Hello: "Worldfdsfsdfsdfsd" });
 });
 
+app.get("/blog", async (req, res) => {
+  res.send({ Hello: "Worldfdsfsdfsdfsd" });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
